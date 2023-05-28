@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: rgb(231,254,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}
+
+header {
+    color: #333;
+    margin-top: 2rem;
+    text-align: center;
+    text-shadow: 0 0 2px #333;;
+}
+
+#description {
+    font-style: italic;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #212121;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+
+.calculator-display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 270px;
+    padding: .5em;
+    font-size: 2rem;
+    background-color: rgb(68, 68, 68);
+    border-radius: .5rem;
+    min-height: 130px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display-text {
+    font-size: 1.125rem;
+    text-align: right;
+}
+
+.result {
+    font-size: 2.25rem;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    width: 100%;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    font-size: 1.225rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow:rgb(0, 0, 0) 0px 5px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow:rgb(0, 0, 0) 0px 2px 0px;
+}
+
+.button-color {
+    background-color: rgb(255, 152, 0);
+    color: white;
+}
+
+button[id="equal"] {
+    grid-column: 3 / 5;
+    grid-row: 5 / 6;
+}
+

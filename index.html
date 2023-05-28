@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Basic Calculator</h1>
+        <p id="description">Only suitable for daily usage</p>
+    </header>
+    <div id="calculator-container" class="calculator-container">
+        <div id="calculator-display" class="calculator-display">
+            <div id="first-display" class="display-text"></div>
+            <div id="result-display" class="result">0</div>
+        </div>
+        <div id="buttons" class="buttons">
+            <button type="button" class="btn" id="all-clear">AC</button>
+            <button type="button" class="btn" id="clear">C</button>
+            <button type="button" class="btn" id="percent">%</button>
+            <button type="button" class="btn button-color" id="divide" data-operator>&divide</button>
+            <button type="button" class="btn" id="seven" data-number>7</button>
+            <button type="button" class="btn" id="eight" data-number>8</button>
+            <button type="button" class="btn" id="nine" data-number>9</button>
+            <button type="button" class="btn button-color" id="plus" data-operator>+</button>
+            <button type="button" class="btn" id="four" data-number>4</button>
+            <button type="button" class="btn" id="five" data-number>5</button>
+            <button type="button" class="btn" id="six" data-number>6</button>
+            <button type="button" class="btn button-color" id="minus" data-operator>-</button>
+            <button type="button" class="btn" id="one" data-number>1</button>
+            <button type="button" class="btn" id="two" data-number>2</button>
+            <button type="button" class="btn" id="three" data-number>3</button>
+            <button type="button" class="btn button-color" id="multiply" data-operator>x</button>
+            <button type="button" class="btn" id="zero" data-number>0</button>
+            <button type="button" class="btn" id="decimal" data-number>.</button>
+            <button type="button" class="btn button-color" id="equal">=</button>
+        </div>
+    </div>
+</body>
+</html>
