@@ -28,7 +28,7 @@ function clear() {
     secondOperand = '';
     currentOperator = null;
     firstDisplay.innerText = '';
-    resultDisplay.innerText = '0';
+    resultDisplay.innerText = '';
 }
 
 function deleteText() {
@@ -42,9 +42,6 @@ function clearResultDisplay() {
 function appendNumber(number) {
     if(number === '.' && resultDisplay.innerText.includes('.')) {
         return;
-    }
-    if (resultDisplay.innerText === '0') {
-        resultDisplay.innerText = '';
     }
     resultDisplay.innerText += number;
 }
@@ -62,7 +59,7 @@ function compute() {
     if (currentOperator === null || firstOperand === '') return;
     secondOperand = resultDisplay.textContent;
     firstDisplay.innerText = `${firstOperand} ${currentOperator} ${secondOperand} =`;
-    result = Math.round(operate(currentOperator, firstOperand, secondOperand) * 1000) / 1000;
+    result = Math.round(operate(currentOperator, firstOperand, secondOperand) * 100) / 100;
     resultDisplay.innerText = result;
     currentOperator = null;
 }
