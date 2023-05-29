@@ -43,8 +43,8 @@ function appendNumber(number) {
     if(number === '.' && resultDisplay.innerText.includes('.')) {
         return;
     }
-    if (resultDisplay.innerText.length > 1 && resultDisplay.innerText[0] === '0') {
-        resultDisplay.innerText = resultDisplay.innerText.slice(1);
+    if (number === '0' && resultDisplay.innerText === '0') {
+        return;
     }
     resultDisplay.innerText += number;
 }
